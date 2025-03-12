@@ -21,7 +21,7 @@ jobs:
         cache: gradle
         
     - name: Grant Gradle wrapper 
-      run: gradle wrapper --gradle-version 8.7.0
+      run: gradle wrapper --gradle-distribution-url https://services.gradle.org/distributions/gradle-8.7.0-bin.zip --gradle-version 8.7.0
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
